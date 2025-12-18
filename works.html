@@ -1,83 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lavori — Vito Saccomandi</title>
+  <title>Vito Saccomandi – Research</title>
+
+  <style>
+    /* ----- layout generale ----- */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      color: #222;
+      background: #f6f4f2; 
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 32px auto 56px;
+      padding: 0 24px;
+      background: #f6f4f2;
+    }
+
+    /* ----- menu in alto ----- */
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* lineetta sotto al menu */
+    .top-rule {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 8px 0 32px;
+    }
+
+    /* ----- layout due colonne ----- */
+    .main-layout {
+      display: flex;
+      gap: 48px;
+      align-items: flex-start;
+    }
+
+    .left-column {
+      flex: 2;
+    }
+
+    .right-column {
+      flex: 1.4;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin: 0 0 0.2rem;
+    }
+
+    .subtitle {
+      margin: 0 0 1.4rem;
+      font-size: 1rem;
+    }
+
+    .name-rule {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 0 0 1.6rem;
+      max-width: 220px; 
+    }
+
+    .left-column p {
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+
+    /* ----- colonna destra ----- */
+    .right-column p {
+      margin-bottom: 0.8rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 800px) {
+      .main-layout {
+        flex-direction: column;
+      }
+      .right-column {
+        order: -1;
+      }
+      .page {
+        margin-top: 16px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="page">
 
-  <p>
-    <a href="index.html">Home</a>
-    <a href="works.html">Lavori</a>
-    <a href="cv.html">CV</a>
-  </p>
+    <!-- MENU IN ALTO -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="works.html">Lavori</a>
+      <a href="cv.html">CV</a>
+    </nav>
+    <hr class="top-rule" />
 
-  <p>* * *</p>
+    <!-- DUE COLONNE -->
+    <div class="main-layout">
 
-  <h1>Lavori</h1>
+      <!-- COLONNA SINISTRA: CONTENUTO -->
+      <div class="left-column">
+        <h1>Research & Writing</h1>
+        <p class="subtitle"><em>Academic work, translations, and public writing</em></p>
+        <hr class="name-rule" />
 
-  <p>* * *</p>
+        <h2>Peer-reviewed articles</h2>
 
-  <h2>Articoli peer-reviewed</h2>
+        <p>
+          V. Saccomandi (2026). <em>Titolo articolo</em>.
+          <span>Rivista, volume(issue): pagine.</span>
+          Available <a href="#">online</a> or in <a href="#">PDF</a>.
+        </p>
 
-  <p>
-    V. Saccomandi (2026). <em>Titolo articolo</em>. Rivista, volume(issue): pagine.
-    Disponibile <a href="#" target="_blank" rel="noopener">online</a> o in
-    <a href="#" target="_blank" rel="noopener">PDF</a>.
-  </p>
+        <p>
+          V. Saccomandi &amp; D. Zanghi (2026).
+          <em>Ripensare il nesso teoria-prassi: Robin Celikates e la quarta generazione della teoria critica</em>.
+          In <em>Critica come prassi sociale. Autocomprensione sociale e teoria critica</em>,
+          Castelvecchi, Bologna.
+        </p>
 
-  <p>
-    V. Saccomandi &amp; D. Zanghi (2026).
-    <em>Ripensare il nesso teoria-prassi: Robin Celikates e la quarta generazione della teoria critica</em>.
-    In <em>Critica come prassi sociale. Autocomprensione sociale e teoria critica</em>, Castelvecchi, Bologna.
-    Disponibile <a href="#" target="_blank" rel="noopener">online</a> o in
-    <a href="#" target="_blank" rel="noopener">PDF</a>.
-  </p>
+        <h2>Translations & edited volumes</h2>
 
-  <h2>Traduzioni / curatele</h2>
+        <p>
+          R. Celikates (2026).
+          <em>Critica come prassi sociale. Autocomprensione sociale e teoria critica</em>,
+          Castelvecchi, Bologna.
+          Translation and editing by D. Zanghi &amp; V. Saccomandi.
+        </p>
 
-  <p>
-    R. Celikates (2026). <em>Critica come prassi sociale. Autocomprensione sociale e teoria critica</em>,
-    Castelvecchi, Bologna. Trad. / cura di D. Zanghi &amp; V. Saccomandi.
-    <a href="#" target="_blank" rel="noopener">Link</a>.
-  </p>
+        <h2>Public writing</h2>
 
-  <h2>Public Writing</h2>
+        <p>Le sinistre europee e la vittoria di Mamdani. <em>MicroMega+</em>, 2025.</p>
+        <p>L’eterno ritorno della sinistra autoritaria. <em>MicroMega</em>, 4/2025 (forthcoming).</p>
+        <p>With Francesco Brusa, I social come doppio del potere. <em>MicroMega</em>, 3/2025.</p>
+        <p>La via fascista all’ambientalismo. <em>MicroMega</em>, 2/2025.</p>
+        <p>Se l’Europa si tinge di rossobruno. <em>MicroMega</em>, 1/2025.</p>
+        <p>With Corrado Piroddi, Retorica di sinistra, ideologia di estrema destra: il caso OttolinaTv.
+           <em>MicroMega+</em>, 2024.</p>
+        <p>With Marco Spagnuolo, Il primo maggio europeo per la Palestina. <em>DinamoPress</em>, 2024.</p>
+        <p>With Corrado Piroddi, Il Fronte del Dissenso. <em>MicroMega+</em>, 2023.</p>
+        <p>With Francesco Brusa, Solidarity Zone. <em>MicroMega</em>, 2023.</p>
+        <p>La battaglia dell’acqua dei “Soulèvements de la terre”. <em>DinamoPress</em>, 2023.</p>
+        <p>Monaco, proteste contro il greenwashing della fiera automobilistica. <em>DinamoPress</em>, 2021.</p>
 
-  <p>Le sinistre europee e la vittoria di Mamdani. MicroMega+, 2025.</p>
-  <p>L’eterno ritorno della sinistra autoritaria. MicroMega, 4/2025 (forthcoming).</p>
-  <p>con Francesco Brusa, I social come doppio del potere. MicroMega, 3/2025.</p>
-  <p>La via fascista all’ambientalismo. MicroMega, 2/2025.</p>
-  <p>Se l’Europa si tinge di rossobruno. MicroMega, 1/2025.</p>
-  <p>con Corrado Piroddi, Retorica di sinistra, ideologia di estrema destra: il caso OttolinaTv. MicroMega+, 2024.</p>
-  <p>con Marco Spagnuolo, Il primo maggio europeo per la Palestina. DinamoPress, 2024.</p>
-  <p>con Corrado Piroddi, Il Fronte del Dissenso, o dell’ultradestra infiltrata nella sinistra. MicroMega+, 2023.</p>
-  <p>con Francesco Brusa, A sostegno dei militanti russi in carcere. L’esperienza di Solidarity Zone. MicroMega, 2023.</p>
-  <p>La battaglia dell’acqua dei “Soulèvements de la terre”. DinamoPress, 2023.</p>
-  <p>Monaco, proteste contro il greenwashing della fiera automobilistica. DinamoPress, 2021.</p>
+        <h2>Talks & invited lectures</h2>
 
-  <h2>Talks &amp; invited</h2>
+        <p>
+          <strong>Discussant</strong>, book discussion of Giuseppe Vacca,
+          <em>Astratti furori e senso della storia</em> (Viella, 2025).
+          Department of Philosophy, Sapienza University of Rome, 6 May 2025.
+        </p>
 
-  <p>
-    <strong>Discussant, book discussion</strong><br>
-    Giuseppe Vacca, <em>Astratti furori e senso della storia. Politica e cultura nella sinistra italiana (1945–1968)</em> (Viella, 2025).<br>
-    Department of Philosophy, Sapienza University of Rome (Villa Mirafiori), Rome. Panel discussion with the author, coordinated by Marcello Mustè, 6 May 2025.
-  </p>
+        <p>
+          <strong>Invited lecture</strong>,
+          <em>Teoria Critica e filosofia della prassi. Karl Korsch, Max Horkheimer e le origini della Scuola di Francoforte</em>.
+          Rome, 24 April 2024.
+        </p>
 
-  <p>
-    <strong>Invited lecture</strong><br>
-    <em>Teoria Critica e filosofia della prassi. Karl Korsch, Max Horkheimer e le origini della Scuola di Francoforte</em>.<br>
-    Roma, 24 April 2024 — Theoretical Philosophy seminar “Filosofia e marxismo. Prospettive novecentesche”.
-  </p>
+        <p>
+          <strong>Round table</strong>,
+          <em>Fine del sogno europeo?</em>.
+          Turin, 5 February 2025.
+        </p>
+      </div>
 
-  <p>
-    <strong>Round table</strong><br>
-    <em>Fine del sogno europeo?</em> [End of the European Dream?].<br>
-    Torino, 5 February 2025 — with Giorgia Serughetti (Università di Milano Bicocca) and Francesca Melandri.
-  </p>
+      <!-- COLONNA DESTRA (vuota o note) -->
+      <div class="right-column">
+        <p>
+          This page collects a selection of my academic research,
+          translations, and public-facing writing.
+        </p>
+      </div>
 
+    </div>
+
+  </div>
 </body>
 </html>
 
